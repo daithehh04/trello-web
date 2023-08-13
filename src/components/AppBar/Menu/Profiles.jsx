@@ -32,7 +32,7 @@ function Profiles() {
           aria-expanded={open ? 'true' : undefined}
         >
           <Avatar
-            sx={{ width: 32, height: 32 }}
+            sx={{ width: 34, height: 34 }}
             alt='avatar'
             src='https://portfolio-sage-delta.vercel.app/assets/images/avatar.jpg'
           />
