@@ -6,9 +6,7 @@ import LightModeIcon from '@mui/icons-material/LightMode'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness'
 import Box from '@mui/material/Box'
-import {
-  useColorScheme
-} from '@mui/material/styles'
+import { useColorScheme } from '@mui/material/styles'
 
 export default function ModeSelect() {
   const { mode, setMode } = useColorScheme()
@@ -19,9 +17,12 @@ export default function ModeSelect() {
   }
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+    <FormControl
+      sx={{ m: 1, minWidth: 120 }}
+      size='small'
+    >
       <InputLabel
-        id="label-select-dark-light-mode"
+        id='label-select-dark-light-mode'
         sx={{
           color: 'white',
           '&.Mui-focused': { color: 'white' }
@@ -30,8 +31,8 @@ export default function ModeSelect() {
         Mode
       </InputLabel>
       <Select
-        labelId="label-select-dark-light-mode"
-        id="demo-select-small"
+        labelId='label-select-dark-light-mode'
+        id='demo-select-small'
         value={mode}
         onChange={handleChange}
         sx={{
@@ -41,21 +42,21 @@ export default function ModeSelect() {
           '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
           '.MuiSvgIcon-root': { color: 'white' }
         }}
-        label="Mode"
+        label='Mode'
       >
-        <MenuItem value="light">
-          <div style={{ display: 'flex', alignItems:'center', gap: '8px' }}>
-            <LightModeIcon fontSize='small'/> Light
+        <MenuItem value='light'>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <LightModeIcon fontSize='small' /> Light
           </div>
         </MenuItem>
-        <MenuItem value="dark">
-          <Box sx={{ display: 'flex', alignItems:'center', gap: 1 }}>
-            <DarkModeOutlinedIcon fontSize='small'/> Dark
+        <MenuItem value='dark'>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <DarkModeOutlinedIcon fontSize='small' /> Dark
           </Box>
         </MenuItem>
-        <MenuItem value="system">
-          <Box sx={{ display: 'flex', alignItems:'center', gap: 1 }}>
-            <SettingsBrightnessIcon fontSize='small'/> System
+        <MenuItem value='system'>
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <SettingsBrightnessIcon fontSize='small' /> System
           </Box>
         </MenuItem>
       </Select>
