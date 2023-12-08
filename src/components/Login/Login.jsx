@@ -44,6 +44,7 @@ function Login({ setApiKey }) {
       >
         <label htmlFor='email'>Email</label>
         <input
+          value='thehh3bg@gmail.com'
           type='email'
           required
           id='email'
